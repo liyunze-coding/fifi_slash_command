@@ -27,9 +27,9 @@ for (const file of commandFiles){
     client.commands.set(command.data.name, command);
 }
 
-client.on('messageCreate', async message => {
-    if (message.author.bot) return;
-})
+// client.on('messageCreate', async message => {
+//     if (message.author.bot) return;
+// })
 
 client.on('interactionCreate', async interaction => {
     if (!interaction.isCommand()) return;
